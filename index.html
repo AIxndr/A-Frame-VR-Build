@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="card" src="images/card.png" />
+        <a-asset-item id="avatarModel" src="models/men.gltf"></a-asset-item>
+      </a-assets>
+        <a-box src="#card" position="0 0 0" height="0.571" width="1" depth="0.01" rotation="0 0 0">
+              <a-entity rotation="0 0 0 " position="0.4 0.1 0.1" scale="1 1 1" gltf-model="#avatarModel" look-at="[camera]">
+        </a-box>
+    </a-scene>
+  </body>
+</html>
