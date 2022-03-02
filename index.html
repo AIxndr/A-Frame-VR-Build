@@ -7,10 +7,32 @@
     <a-scene>
       <a-assets>
         <img id="card" src="images/card.png" />
+        <img id="3dactivated" src="images/informationActivated.png" />
+        <img id="3ddeactivated" src="images/informationDeactivated.png" />
+        <img id="infoactivated" src="images/3dmodelActivated.png" />
+        <img id="infodeactivated" src="images/3dmodelDeactivated.png" />
+        <img id="profilePic" src="images/profilePic.png" />
+        <img id="tele" src="images/phone.png" />
+        <img id="web" src="images/web.png" />
+        <img id="mail" src="images/mail.png" />
+        <img id="location" src="images/gps.png" />
         <a-asset-item id="avatarModel" src="models/men.gltf"></a-asset-item>
       </a-assets>
         <a-box src="#card" position="0 0 0" height="0.571" width="1" depth="0.01" rotation="0 0 0">
         </a-box>
+      <!-- May change to more background for better visibility  -->
+      <a-image src="#infodeactivated"position="0 0 0" visible="true"></a-image>
+      <a-image src="#infoactivated" position="0 0 0" visible="false"></a-image>
+      <a-image src="#3ddeactivated" position="0 0 0" visible="true"></a-image>
+      <a-image src="#3dactivated"position="0 0 0" visible="false"></a-image>
+      
+      <a-image src="#profilePic"position="0 0 0" visible="true"></a-image>
+      
+      <!-- change the images to Button like including the text  -->
+      <a-image src="#tele"position="0 0 0" visible="true"></a-image>
+      <a-image src="#web"position="0 0 0" visible="true"></a-image>
+      <a-image src="#mail"position="0 0 0" visible="true"></a-image>
+      <a-image src="#location"position="0 0 0" visible="true"></a-image>
       
 
     </a-scene>
